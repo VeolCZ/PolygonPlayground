@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+.gradient-bg-fun {
+  background-color:#99e2ff;
+  background-image:
+  radial-gradient(at 39% 0%, hsla(221,92%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 25% 7%, hsla(169,75%,71%,1) 0px, transparent 50%),
+  radial-gradient(at 27% 11%, hsla(202,65%,69%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 12%, hsla(72,79%,65%,1) 0px, transparent 50%),
+  radial-gradient(at 59% 36%, hsla(105,81%,62%,1) 0px, transparent 50%),
+  radial-gradient(at 20% 29%, hsla(87,83%,79%,1) 0px, transparent 50%),
+  radial-gradient(at 44% 41%, hsla(291,85%,63%,1) 0px, transparent 50%);
+}
+
+.gradient-bg-main {
+  background-color:hsla(130,2%,4%,1);
+  background-image:
+  radial-gradient(at 23% 91%, hsla(216,80%,46%,0.39) 0px, transparent 50%),
+  radial-gradient(at 30% 40%, hsla(279,80%,46%,0.26) 0px, transparent 50%),
+  radial-gradient(at 98% 95%, hsla(240,90%,53%,0.24) 0px, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.eth-card {
+  background-color:#a099ff;
+  background-image: 
+    radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%), 
+    radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%), 
+    radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%), 
+    radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%), 
+    radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
+    radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%), 
+    radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+}
+
+.window-bg {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 13px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid whitesmoke;
+}
+
+.App-logo {
+  height: 25vmin;
+  pointer-events: none;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 0rem;
+  place-items: center;
+}
+
+.experience_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.experience_container > div:hover {
+  background: transparent;
+  border-color: white;
+}
+
+.experience_container > div {
+  background: transparent;
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+}
+
+.experience_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+/* ====== Media Queries (md) ======*/
+
+@media screen and (max-width: 1000px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .experience_container {
+      grid-template-columns: 1fr;
+    }
+
+    .experience_container > div {
+        width: 100%;
+        padding: 2rem;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .experience_content {
+        padding: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+
+.no-outline:focus {
+  outline: none;
+}
