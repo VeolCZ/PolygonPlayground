@@ -4,8 +4,8 @@ import zidl from '../../../assets/zidlCoinFin.png'
 
 const Token = () => {
   return (
-  <>
-    <div className='flex w-full justify-center items-center md:mt-[10rem] mt-[1.5rem]'>
+  <div className='h-[120vh] md:mt-[5rem] mt-[-1.5rem]'>
+    <div className='flex w-full justify-center items-center md:mt-[-2.5rem] mt-[1.5rem]'>
       <div className='flex md:flex-row flex-col items-start justify-between gap-15 md:p-20 py-6 px-4'>
         <div className='flex flex-1 justify-start flex-col md:mr-10'>
           <h1 className='text-4xl text-bold sm:text-6xl text-white text-gradient py-1 md:mt-5'>
@@ -39,9 +39,7 @@ const Token = () => {
            in the contract address field.
         </p>
     </div>
-  </>
-  
-  
+  </div>
   )
 }
 

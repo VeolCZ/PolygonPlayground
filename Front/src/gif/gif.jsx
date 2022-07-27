@@ -7,15 +7,13 @@ import ConnectWallet from "../Components/ConnectWallet/ConnectWallet.jsx"
 import { TransactionProvider } from "../Context/TransactionContext"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <TransactionProvider>
-    <React.StrictMode>
+  <React.StrictMode>
+    <TransactionProvider>
       <div className='min-h-screen gradient-bg-main'>
-        <div>
-          <Navbar />
-          <ConnectWallet /> 
-        </div>
+        <Navbar />
+        <ConnectWallet />
         <GifWindows />
-      </div>  
-    </React.StrictMode>
-  </TransactionProvider>
+      </div>
+    </TransactionProvider>
+  </React.StrictMode>
 )

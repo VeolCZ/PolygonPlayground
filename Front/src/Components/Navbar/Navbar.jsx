@@ -20,8 +20,8 @@ const Navbar = () => {
         {["Home", "GIF", "Swap", "Token"].map((item, index) => (
           <NavBarItem key={item + index} title={item} way={item.toLocaleLowerCase()}/>
         ))}
-        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
-        <a href="/contact/" alt="Contact">Contact</a>
+        <li className="bg-[#2952e3] p-1 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
+          <a href="/contact/" alt="Contact">Contact</a>
         </li>
       </ul>
       <div className="flex relative">

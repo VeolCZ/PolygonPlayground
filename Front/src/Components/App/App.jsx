@@ -2,7 +2,7 @@ import logo from '../../../assets/logo.png'
 
 function App() {
   return (
-    <div className="">
+    <div className="md:h-[120vh]">
       <div className="flex-none">
         <div className="flex flex-col mt-[7vh] items-center text-white justify-center text-2xl md:text-5xl text-center ">
           <img src={logo} className="App-logo" alt="logo" />

@@ -13,13 +13,14 @@ const TransactionCard = ({ addressTo, addressFrom, timestamp, message, keyword, 
       <div className='flex flex-col items-center w-full mt-3'>
         <div className='w-full mb-6 p-2'>
           {/* <a href={`https://ropsten.etherscan.io/address/${addressTo}`} target="_blank" rel='noopener noreferrer'> */}
-          <a href={`https://mumbai.polygonscan.com/address/${addressTo}`} target="_blank" rel='noopener noreferrer'>            <p className='text-white text-base'>
+          <a href={`https://mumbai.polygonscan.com/address/${addressTo}`} target="_blank" rel='noopener noreferrer'>
+            <p className='text-white text-base'>
               From: <u>{shortenAddress(addressFrom)}</u>
             </p>
           </a>
           {/* <a href={`https://ropsten.etherscan.io/address/${addressTo}`} target="_blank" rel='noopener noreferrer'> */}
           <a href={`https://mumbai.polygonscan.com/address/${addressTo}`} target="_blank" rel='noopener noreferrer'>
-            <p className='text-white text-base'> 
+            <p className='text-white text-base'>
               To: <u>{shortenAddress(addressTo)}</u>
             </p>
           </a>
@@ -61,7 +62,7 @@ const GifWindows = () => {
         ) : (
           <h3 className='text-white 2xl:text-4xl text-3xl text-center my-2 xl:my-[2rem]'>
             Connect your account to see Latest transactions
-          </h3> 
+          </h3>
         )}
         <div className="h-[1px] w-[75%] bg-gray-400 my-2" />
         <div className='flex flex-wrap justify-center items-center mt-10'>

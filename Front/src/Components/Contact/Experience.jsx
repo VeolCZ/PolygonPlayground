@@ -10,7 +10,7 @@ const Experience = () => {
           What Skills I Have
         </div>
         <div className="h-[1px] w-[75%] bg-gray-400 my-2" />
-      </div>  
+      </div>
       <div className='container experience_container'>
         <div className='experience_frontend blue-glassmorphism'>
           <h3 className='text-center mb-[2rem]'>Frontend Developer</h3>
@@ -67,7 +67,7 @@ const Experience = () => {
               <FaCheckCircle className="mb-[6px]"/>
               <div>
                 <h4>Pandas</h4>
-                <small>Some Experience</small>
+                <small>Experienced</small>
               </div>
             </div>
             <div className='flex gap-4'>
